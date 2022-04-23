@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>nomads</title>
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="frontend/styles/main.css" />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend/styles/main.css" />
 </head>
 
 <body>
@@ -84,6 +85,59 @@
                         </nav>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-8 pl-lg-0">
+                        <div class="card card-details">
+                            <h1>
+                                Nusa Penida
+                            </h1>
+                            <p>
+                                Repulic Of Indeonesia Raya
+                            </p>
+                            <div class="gallery">
+                                <div class="xzoom-container">
+                                    <img src="frontend/images/details-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <h2>Tentang Wisata</h2>
+                            <p>
+                                Where is Nusa Penida Island located? Nusa Penida is a small island located southeast of the island of Bali, and is separated by the Badung strait. Near this island, there are 2 other small islands, namely the island of Nusa Lembongan and the island of
+                                Nusa Ceningan. Third a small island in the southeastern part of the island of Bali, has its own uniqueness and charm and there are differences from one another. The three islands are included in the administrative area
+                                of ​​​​Klungkung regency, Bali province. What is the meaning of the word Nusa Penida comes from the Balinese language
+                            </p>
+                            <p>
+                                Nusa means island and Penida comes from two words, Ped and Ida. Ped means death and Ida means power. So Nusa Penida can mean an island that has deadly power.
+                            </p>
+                            <div class="features row">
+                                <div class="col-md-4">
+                                    <img src="frontend/images/ic_event.png" alt="" class="features-image">
+                                    <div class="description">
+                                        <h3>Featured Event</h3>
+                                        <p>Tari Kecak</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 border-left">
+                                    <div class="description">
+                                        <img src="frontend/images/ic_bahasa.png" alt="" class="features-image">
+                                        <div class="description">
+                                            <h3>Language</h3>
+                                            <p>Bahasa Indonesia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 border-left">
+                                    <div class="description">
+                                        <img src="frontend/images/ic_foods.png" alt="" class="features-image">
+                                        <div class="description">
+                                            <h3>Foods</h3>
+                                            <p>Local Foods</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -154,6 +208,18 @@
     <script src="frontend/libraries/retina/retina.js"></script>
     <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: '#333',
+                pageXOffset: 15
+            });
+        });
+    </script>
 </body>
 
 </html>
